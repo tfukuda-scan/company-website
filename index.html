@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="ja" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- 検索エンジン向けメタタグ -->
+    <title>スペーススキャン株式会社｜山口県光市の建設DX・ICT施工・BIM/CIM</title>
+    <meta name="description" content="スペーススキャン株式会社の公式ホームページです。山口県光市を中心に、建設現場のICT活用工事、BIM/CIM、AI解析、3次元測量など、施工の生産性を向上させる最新のDXソリューションを提供しています。">
+    <meta name="keywords" content="建設DX, ICT施工, BIM/CIM, 3次元測量, 山口県, 光市, AI解析, スペーススキャン">
+    
+    <!-- SNS用メタタグ (OGP) -->
+    <meta property="og:title" content="スペーススキャン株式会社｜山口県光市の建設DX・ICT施工・BIM/CIM">
+    <meta property="og:description" content="建設現場の課題をデジタル技術で解決。ICT施工・BIM/CIM・AI解析のスペシャリスト。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://spacescan.co.jp/">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: '#00D1FF',
+                        surface: '#0A0A0A',
+                        'surface-light': '#141414',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', '"Helvetica Neue"', 'Arial', '"Hiragino Kaku Gothic ProN"', '"Hiragino Sans"', 'Meiryo', 'sans-serif'],
+                        display: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            line-height: 1.7;
+            letter-spacing: 0.03em;
+        }
+        .bg-grid {
+            background-image: 
+                linear-gradient(to right, rgba(255,255,255,0.05) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(255,255,255,0.05) 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+        .reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.8s ease-out;
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ロゴをはっきり浮かび上がらせるための設定 */
+        .hero-spotlight {
+            background: radial-gradient(circle at center, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 65%);
+        }
+
+        .symbol-overlay {
+            filter: 
+                drop-shadow(0 0 2px rgba(255, 255, 255, 0.4)) 
+                drop-shadow(0 0 40px rgba(255, 255, 255, 0.15))
+                drop-shadow(0 0 80px rgba(255, 255, 255, 0.1));
+            opacity: 0.95;
+            pointer-events: none;
+            user-select: none;
+        }
+    </style>
+</head>
+<body class="bg-surface text-white font-sans selection:bg-brand selection:text-surface">
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 border-b border-black/5 bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-6 h-16 md:h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="h-10 flex items-center">
+                    <div class="flex items-center">
+                        <img src="logo.png" alt="Space Scan Logo" class="h-6 md:h-8 w-auto object-contain">
+                    </div>
+                </div>
+            </div>
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-surface/70 uppercase tracking-widest">
+                <a href="#services" class="hover:text-brand transition-colors">SERVICE</a>
+                <a href="#ict" class="hover:text-brand transition-colors">ICT</a>
+                <a href="#contact" class="px-5 py-2 bg-surface text-white rounded-full hover:bg-brand transition-colors text-xs">CONTACT</a>
+            </div>
+            <!-- Mobile Contact Button -->
+            <a href="#contact" class="md:hidden text-[10px] font-bold px-4 py-2 bg-surface text-white rounded-full">CONTACT</a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative min-h-[90vh] md:min-h-screen flex items-center pt-20 overflow-hidden bg-grid z-10 px-6">
+            <div class="absolute inset-0 bg-gradient-to-b from-surface/0 via-surface/40 to-surface z-20 pointer-events-none"></div>
+            
+            <!-- スポットライトと巨大シンボルマーク -->
+            <div class="absolute inset-0 flex items-center justify-center z-10 hero-spotlight">
+                <img src="logo_symbol.png" alt="" class="w-[120%] md:w-[70%] max-w-5xl symbol-overlay opacity-60 md:opacity-95">
+            </div>
+
+            <div class="max-w-7xl mx-auto relative z-30 py-12">
+                <div class="reveal active">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-brand/30 bg-brand/10 text-brand text-[10px] md:text-xs font-bold tracking-widest uppercase mb-6">
+                        <span class="relative flex h-2 w-2">
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-2 w-2 bg-brand"></span>
+                        </span>
+                        Construction DX Consulting
+                    </div>
+                    <!-- 改行制御：PCは11:02AM版の指定、スマホは3分割 -->
+                    <h1 class="text-4xl md:text-8xl font-bold leading-[1.2] md:leading-[0.9] tracking-tighter mb-8">
+                        デジタル技術で、<br />
+                        <span class="text-brand">建設現場</span>と<br class="md:hidden" />
+                        未来を<br class="hidden md:block" />
+                        つなぐ。
+                    </h1>
+                    <!-- 改行制御：指定の位置でPC版のみ改行 + 中央配置 -->
+                    <p class="text-base md:text-xl text-white/90 max-w-3xl mb-10 leading-relaxed md:text-center md:mx-auto">
+                        スペーススキャン株式会社は、山口県光市を拠点に、ICT・BIM/CIM・AIなどの<br class="hidden md:block" />
+                        最新技術を活用し、現場の課題解決と生産性向上を支援します。
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="#services" class="px-8 py-4 bg-brand text-surface font-bold rounded-sm flex items-center justify-center gap-2 hover:bg-white transition-colors group">
+                            事業内容を見る <i data-lucide="arrow-up-right" class="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform"></i>
+                        </a>
+                        <a href="#contact" class="px-8 py-4 border border-white/20 font-bold rounded-sm flex items-center justify-center hover:bg-white/5 transition-colors">
+                            お問い合わせ
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-20 md:py-32 bg-surface px-6">
+            <div class="max-w-7xl mx-auto">
+                <div class="mb-12 md:mb-16 reveal">
+                    <h2 class="text-sm font-bold tracking-[0.2em] text-brand uppercase mb-4">Our Services</h2>
+                    <!-- 改行制御：PCは1行、スマホは指定位置で改行 -->
+                    <p class="text-3xl md:text-5xl font-bold leading-tight">
+                        建設現場の可能性を、<br class="md:hidden" />
+                        デジタルで拡張する。
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-white/5 border border-white/5">
+                    
+                    <!-- Service Card 1 -->
+                    <div class="reveal group p-8 border border-white/5 hover:border-brand/30 transition-all relative overflow-hidden min-h-[400px] md:min-h-[450px] flex flex-col justify-end">
+                        <div class="absolute inset-0 z-0">
+                            <img src="service1.png" alt="" class="w-full h-full object-cover opacity-60 group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/40 to-transparent"></div>
+                        </div>
+                        <div class="relative z-10">
+                            <div class="w-12 h-12 rounded-lg bg-brand/20 backdrop-blur-sm flex items-center justify-center mb-6 group-hover:bg-brand transition-colors">
+                                <i data-lucide="database" class="w-6 h-6 text-brand group-hover:text-surface transition-colors"></i>
+                            </div>
+                            <h3 class="text-xl font-bold mb-4">データ収集・AI解析</h3>
+                            <p class="text-sm text-white/90 leading-relaxed">建設現場の効率化と安全性向上を目的としたAI・データ解析技術の研究・提供。現場のビッグデータを価値ある情報へと変換します。</p>
+                        </div>
+                    </div>
+
+                    <!-- Service Card 2 -->
+                    <div class="reveal group p-8 border border-white/5 hover:border-brand/30 transition-all relative overflow-hidden min-h-[400px] md:min-h-[450px] flex flex-col justify-end">
+                        <div class="absolute inset-0 z-0"><img src="service2.png" class="w-full h-full object-cover opacity-60 group-hover:scale-110 transition-all duration-700"><div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/40 to-transparent"></div></div>
+                        <div class="relative z-10"><div class="w-12 h-12 rounded-lg bg-brand/20 flex items-center justify-center mb-6"><i data-lucide="cpu" class="w-6 h-6 text-brand"></i></div>
+                        <h3 class="text-xl font-bold mb-4 text-white">アプリケーション開発・支援</h3><p class="text-sm text-white/90 leading-relaxed">現場で使いやすいDXツール・システムの開発から運用までをサポート。独自の課題に合わせたカスタムソリューションを提供します。</p></div>
+                    </div>
+
+                    <!-- Service Card 3 -->
+                    <div class="reveal group p-8 border border-white/5 hover:border-brand/30 transition-all relative overflow-hidden min-h-[400px] md:min-h-[450px] flex flex-col justify-end">
+                        <div class="absolute inset-0 z-0"><img src="service3.png" class="w-full h-full object-cover opacity-60 group-hover:scale-110 transition-all duration-700"><div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/40 to-transparent"></div></div>
+                        <div class="relative z-10"><div class="w-12 h-12 rounded-lg bg-brand/20 flex items-center justify-center mb-6"><i data-lucide="graduation-cap" class="w-6 h-6 text-brand"></i></div>
+                        <h3 class="text-xl font-bold mb-4 text-white">教育研修・セミナー</h3><p class="text-sm text-white/90 leading-relaxed">DX人材育成や現場導入を支援する研修プログラム。最新技術を使いこなすための知識とスキルを体系的に提供します。</p></div>
+                    </div>
+
+                    <!-- Service Card 4 -->
+                    <div class="reveal group p-8 border border-white/5 hover:border-brand/30 transition-all relative overflow-hidden min-h-[400px] md:min-h-[450px] flex flex-col justify-end">
+                        <div class="absolute inset-0 z-0"><img src="service4.png" class="w-full h-full object-cover opacity-60 group-hover:scale-110 transition-all duration-700"><div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/40 to-transparent"></div></div>
+                        <div class="relative z-10"><div class="w-12 h-12 rounded-lg bg-brand/20 flex items-center justify-center mb-6"><i data-lucide="settings" class="w-6 h-6 text-brand"></i></div>
+                        <h3 class="text-xl font-bold mb-4 text-white">DXコンサルティング</h3><p class="text-sm text-white/90 leading-relaxed">ICT・BIM/CIM活用支援、デジタル化戦略立案など、業務プロセス全体を支援。現場のデジタルシフトを加速させます。</p></div>
+                    </div>
+
+                    <!-- Service Card 5 -->
+                    <div class="reveal group p-8 border border-white/5 hover:border-brand/30 transition-all relative overflow-hidden min-h-[400px] md:min-h-[450px] flex flex-col justify-end">
+                        <div class="absolute inset-0 z-0"><img src="service5.png" class="w-full h-full object-cover opacity-60 group-hover:scale-110 transition-all duration-700"><div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/40 to-transparent"></div></div>
+                        <div class="relative z-10"><div class="w-12 h-12 rounded-lg bg-brand/20 flex items-center justify-center mb-6"><i data-lucide="map" class="w-6 h-6 text-brand"></i></div>
+                        <h3 class="text-xl font-bold mb-4 text-white">測量・3Dデータ取得</h3><p class="text-sm text-white/90 leading-relaxed">基準点測量からTLS・UAVによる3次元点群測量まで。高精度なデータを計測し、デジタルツインの基盤を構築します。</p></div>
+                    </div>
+
+                    <!-- Service Card 6 -->
+                    <div class="reveal group p-8 border border-white/5 hover:border-brand/30 transition-all relative overflow-hidden min-h-[400px] md:min-h-[450px] flex flex-col justify-end">
+                        <div class="absolute inset-0 z-0"><video autoplay muted loop playsinline class="w-full h-full object-cover opacity-60"><source src="background.mp4" type="video/mp4"></video><div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/40 to-transparent"></div></div>
+                        <div class="relative z-10"><div class="w-12 h-12 rounded-lg bg-brand/20 flex items-center justify-center mb-6"><i data-lucide="video" class="w-6 h-6 text-brand"></i></div>
+                        <h3 class="text-xl font-bold mb-4 text-white">UAV空撮・動画制作</h3><p class="text-sm text-white/90 leading-relaxed">建設現場やプロジェクト紹介用の空撮映像を企画・編集まで一貫対応。視覚的な進捗管理やPR活動をサポートします。</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ICT Process Section -->
+        <section id="ict" class="py-20 md:py-32 bg-surface-light relative overflow-hidden px-6">
+            <div class="max-w-7xl mx-auto relative z-10">
+                <div class="mb-12 md:mb-16 text-center reveal">
+                    <h2 class="text-sm font-bold tracking-[0.2em] text-brand uppercase mb-4">ICT Construction</h2>
+                    <!-- 改行制御：スマホ版のみ改行 -->
+                    <h3 class="text-3xl md:text-4xl font-bold text-white leading-tight">i-Constructionの<br class="md:hidden" />トップランナーとして。</h3>
+                </div>
+
+                <div class="grid lg:grid-cols-2 gap-8 md:gap-12">
+                    <!-- ICT -->
+                    <div class="reveal p-6 md:p-8 bg-surface rounded-2xl border border-white/5">
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="w-10 h-10 rounded-lg bg-brand/20 flex items-center justify-center"><i data-lucide="settings" class="w-6 h-6 text-brand"></i></div>
+                            <h4 class="text-2xl font-bold text-white uppercase tracking-wider">ICT</h4>
+                        </div>
+                        <!-- 改行制御：PC版ご指定の位置で改行 -->
+                        <p class="text-white/90 text-sm md:text-base mb-8 leading-relaxed">
+                            ICT活用工事の「5つのプロセス」において、専門的な技術力で<br class="hidden md:block" />全面的にサポートいたします。
+                        </p>
+                        <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-start">
+                            <div class="md:col-span-7 space-y-3">
+                                <div class="flex items-start gap-3 p-3 rounded-lg bg-surface-light border border-white/5 text-sm">
+                                    <span class="text-brand font-black">01</span> 3次元起工測量
+                                </div>
+                                <div class="flex items-start gap-3 p-3 rounded-lg bg-surface-light border border-white/5 text-sm">
+                                    <span class="text-brand font-black">02</span> 3次元設計データ作成
+                                </div>
+                                <div class="flex items-start gap-3 p-3 rounded-lg bg-surface-light border border-white/5 text-sm">
+                                    <span class="text-brand font-black">03</span> ICT建設機械による施工
+                                </div>
+                                <div class="flex items-start gap-3 p-3 rounded-lg bg-surface-light border border-white/5 text-sm">
+                                    <span class="text-brand font-black">04</span> 3次元出来形管理
+                                </div>
+                                <div class="flex items-start gap-3 p-3 rounded-lg bg-surface-light border border-white/5 text-sm">
+                                    <span class="text-brand font-black">05</span> 電子成果品作成
+                                </div>
+                            </div>
+                            <!-- 画像：スマホではリストの下に表示される -->
+                            <div class="md:col-span-5 pt-4 md:pt-2">
+                                <div class="rounded-xl overflow-hidden border border-white/10 shadow-lg">
+                                    <img src="service6.png" class="w-full h-auto object-contain">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- BIM/CIM -->
+                    <div class="reveal p-6 md:p-8 bg-surface rounded-2xl border border-white/5 flex flex-col">
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="w-10 h-10 rounded-lg bg-brand/20 flex items-center justify-center"><i data-lucide="layers" class="w-6 h-6 text-brand"></i></div>
+                            <h4 class="text-2xl font-bold text-white uppercase tracking-wider">BIM/CIM</h4>
+                        </div>
+                        <p class="text-white/90 text-sm md:text-base leading-relaxed mb-8">
+                            2次元CADデータおよび3次元データより、構造物等の躯体モデルや配筋モデルを作成・納品します。工事関係者間で情報を共有・活用し、効率化を図るBIM/CIMを全面的にサポートいたします。
+                        </p>
+                        <div class="grid grid-cols-2 gap-4 mt-auto">
+                            <img src="service7.png" class="rounded-xl border border-white/10 shadow-lg">
+                            <img src="service8.png" class="rounded-xl border border-white/10 shadow-lg mt-6">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 md:py-32 bg-surface px-6">
+            <div class="max-w-3xl mx-auto">
+                <div class="text-center mb-12 reveal">
+                    <h2 class="text-sm font-bold tracking-[0.2em] text-brand uppercase mb-4">Contact Us</h2>
+                    <h3 class="text-3xl md:text-4xl font-bold mb-6">プロジェクトのご相談はこちら</h3>
+                    <!-- 改行制御：スマホ・PC共通のご指定箇所で改行 -->
+                    <p class="text-white/80 text-sm md:text-base leading-relaxed">
+                        建設DXの導入、ICT活用工事、３D計測など、<br />
+                        お気軽にお問い合わせください。
+                    </p>
+                </div>
+                
+                <form class="space-y-4 text-left reveal" action="https://formsubmit.co/info@spacescan.co.jp" method="POST">
+                    <input type="text" name="_honey" style="display:none">
+                    <input type="hidden" name="_next" value="https://spacescan.co.jp/">
+                    <input type="hidden" name="_subject" value="【Space Scan】HPからのお問い合わせ">
+
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div class="space-y-2">
+                            <label class="text-xs font-bold text-white/70 uppercase tracking-widest ml-1">お名前</label>
+                            <input type="text" name="お名前" required class="w-full bg-surface-light border border-white/10 rounded-sm px-4 py-3 text-white outline-none focus:border-brand transition-all">
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-xs font-bold text-white/70 uppercase tracking-widest ml-1">貴社名</label>
+                            <input type="text" name="貴社名" class="w-full bg-surface-light border border-white/10 rounded-sm px-4 py-3 text-white outline-none focus:border-brand transition-all">
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <label class="text-xs font-bold text-white/70 uppercase tracking-widest ml-1">メールアドレス</label>
+                        <input type="email" name="email" required class="w-full bg-surface-light border border-white/10 rounded-sm px-4 py-3 text-white outline-none focus:border-brand transition-all">
+                    </div>
+                    <div class="space-y-2">
+                        <label class="text-xs font-bold text-white/70 uppercase tracking-widest ml-1">内容</label>
+                        <textarea name="内容" required class="w-full bg-surface-light border border-white/10 rounded-sm px-4 py-3 text-white min-h-[160px] outline-none focus:border-brand transition-all"></textarea>
+                    </div>
+                    <button type="submit" class="w-full py-4 bg-brand text-surface font-black rounded-sm hover:bg-white transition-all flex items-center justify-center gap-3 tracking-widest uppercase">
+                        送信する <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-surface">
+        <div class="bg-white py-1.5 border-b border-black/5 px-6">
+            <div class="max-w-7xl mx-auto flex items-center justify-between">
+                <img src="logo.png" alt="Space Scan" class="h-6 md:h-8">
+                <div class="flex gap-4 md:gap-8">
+                    <span class="font-bold text-[10px] uppercase tracking-widest text-surface">Company</span>
+                    <span class="font-bold text-[10px] uppercase tracking-widest text-surface">Legal</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="py-16 border-b border-white/5 px-6">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
+                    <div class="col-span-1 lg:col-span-2">
+                        <div class="rounded-lg overflow-hidden border border-white/10 shadow-sm max-w-md">
+                            <!-- カラー修正：grayscaleを削除 -->
+                            <img src="building.png" alt="Office" class="w-full h-auto object-cover transition-transform duration-500 hover:scale-105">
+                        </div>
+                    </div>
+                    <div>
+                        <ul class="space-y-4 text-sm text-white/90">
+                            <li class="flex gap-3"><i data-lucide="map-pin" class="w-4 h-4 text-brand flex-shrink-0"></i> 〒743-0011 <br />山口県光市光井9-14-14</li>
+                            <li class="flex gap-3 items-center"><i data-lucide="phone" class="w-4 h-4 text-brand"></i> 0833-44-7277</li>
+                            <li class="flex gap-3 items-center"><i data-lucide="mail" class="w-4 h-4 text-brand"></i> info@spacescan.co.jp</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="space-y-4 text-sm text-white/90">
+                            <li><a href="#" class="hover:text-brand transition-colors">プライバシーポリシー</a></li>
+                            <li><a href="#" class="hover:text-brand transition-colors">Cookieポリシー</a></li>
+                            <li class="pt-2">
+                                <span class="text-white/70 text-[10px] block mb-1 font-bold">測量業者登録</span>
+                                <span class="font-bold">第(1)－37844号</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="py-10 bg-surface px-6 text-center md:text-left">
+            <p class="text-[10px] text-white/40 tracking-widest uppercase">© <span id="year"></span> Space Scan Inc. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+        document.getElementById('year').textContent = new Date().getFullYear();
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('active');
+            });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
